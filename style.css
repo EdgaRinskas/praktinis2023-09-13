@@ -21,7 +21,7 @@
 }
 
 .navigation {
-    display: inline-flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 28px;
@@ -29,26 +29,17 @@
 }
 
 .header-list {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     gap: 28px;
     list-style-type: none;
 }
 
 .hero {
     display: flex;
-    justify-content: flex-start;
+    ;
     max-width: 1120px;
     min-height: 519px;
-    flex-shrink: 0;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.cta {
-    padding-top: 70px;
-    padding-bottom: 70px;
 }
 
 .figure {
@@ -56,16 +47,7 @@
     object-position: top;
 }
 
-.cta-1 {
-    color: var(--Pink, #FF3998);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-}
+
 
 .cta-2 {
     color: var(--Dark-1, #111);
@@ -131,23 +113,15 @@
     flex-shrink: 0;
 }
 
-.showcase-container {
-    width: 100%;
-    text-align: center;
-    text-align: left;
-}
-
 .card-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .card-1,
 .card-2,
 .card-3,
 .card-4 {
-    display: block;
     width: 290px;
     height: 400px;
     margin-top: 0;
