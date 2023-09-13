@@ -15,24 +15,20 @@
     max-width: 1280px;
     min-height: 36px;
     flex-shrink: 0;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 70px;
+
 }
 
 .navigation {
-    display: flex;
-    justify-content: flex-end;
+    display: inline-flex;
     align-items: center;
     gap: 28px;
-    list-style-type: none;
 }
 
-.header-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
+ul, a, li{
+    display: inline-flex;
     list-style-type: none;
+    text-decoration: none;
+    gap: 10rem;
 }
 
 .hero {
@@ -63,9 +59,6 @@
     letter-spacing: 1.6px;
     text-transform: uppercase;
     position: relative;
-    bottom: -50px;
-    left: 35px;
-    margin-left: 20px;
 }
 
 .cta-2 {
@@ -85,10 +78,6 @@
     font-weight: 400;
     line-height: 150%;
     /* 30px */
-}
-
-.button {
-    display: grid;
 }
 
 .upsell-container {
@@ -150,7 +139,7 @@
 }
 
 .card-gray {
-    display: inline-flex;
+    display:inline-block;
     width: 100%;
     border-radius: 16px 0px 16px;
     background: var(--Light-2, #EEE);
@@ -165,10 +154,6 @@
     width: 290px;
     height: 278px;
     margin-bottom: 0;
-}
-
-.button {
-    object-position: right;
 }
 
 .svg-frame {
