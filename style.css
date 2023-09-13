@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.main-container {
+.desktop-container {
     max-width: 1440px;
     border-radius: 16px;
-    background: var(--Light-1, #FFF);
+    background-color: #FFF;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -37,17 +37,36 @@
 
 .hero {
     display: flex;
-    ;
     max-width: 1120px;
     min-height: 519px;
 }
 
-.figure {
-    object-fit: cover;
-    object-position: top;
+.cta {
+    display:flex;
+    flex-direction: row;
+    max-width: 1120px;
+    min-height: 519px;
+    flex-shrink: 0;
 }
 
+.figure {
+    object-fit: contain;
+}
 
+.cta-1 {
+    color: var(--Pink, #FF3998);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: -50px;
+    left: 35px;
+    margin-left: 20px;
+}
 
 .cta-2 {
     color: var(--Dark-1, #111);
@@ -66,6 +85,10 @@
     font-weight: 400;
     line-height: 150%;
     /* 30px */
+}
+
+.button {
+    display: grid;
 }
 
 .upsell-container {
@@ -115,7 +138,7 @@
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
 .card-1,
@@ -124,23 +147,28 @@
 .card-4 {
     width: 290px;
     height: 400px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .card-gray {
+    display: inline-flex;
+    width: 100%;
     border-radius: 16px 0px 16px;
     background: var(--Light-2, #EEE);
     margin-top: 0;
 }
 
-.card-1-image {
+.card-1-image,
+.card-2-image,
+.card-3-image,
+.card-4-image {
+    display: block;
     width: 290px;
     height: 278px;
+    margin-bottom: 0;
 }
 
 .button {
-    object-position: left;
+    object-position: right;
 }
 
 .svg-frame {
@@ -148,12 +176,6 @@
     position: relative;
 }
 
-.cta-1 {
-    position: relative;
-    bottom: -3rem;
-    left: 45px;
-    margin-left: 20px;
-}
 
 .footer-upsell {
     display: flex;
@@ -196,7 +218,6 @@
     line-height: 150%;
     /* 30px */
 }
-
 
 
 .list-1 {
